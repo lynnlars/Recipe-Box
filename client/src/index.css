@@ -1,0 +1,106 @@
+:root {
+  --main-color: #d9ad55;
+  --secondary-color: #8f9d6a;
+  --button-color: #c1693c;
+  --accent-color: #b0b98f;
+  --font-color:  #3d302b;
+}
+
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Baskervville SC", serif;
+  color: var(--font-color);
+  
+}
+
+button{
+  background-color: var(--button-color);
+  padding: 5px;
+  outline: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.navbar{
+  height: 5vh;
+  border-bottom: solid black 1px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--main-color);
+}
+.nav-h1{
+  font-family: "Playwrite AU NSW", cursive;
+}
+
+.link {
+  margin: 5px;
+}
+
+.link:focus{
+  box-shadow: 0 0 0 3px var(--accent-color);
+  
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.recipe-list{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  border-radius: 20px;
+  background-color: var(--main-color);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.container{
+  padding: 15px;
+  margin: 5px;
+  width: 80%;
+  border-radius: 20px;
+  background-color: var(--secondary-color);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.container:hover{
+  transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 15px;
+}
+
+.container > * {
+  margin: 10px;
+}
+
+.recipe-card{
+  padding: 5px;
+}
+
+.recipe-card > *{
+  margin: 5px;
+}
+
+.recipe--form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  background-color: var(--main-color);
+  width: 50vw;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.recipe--form input, 
+.recipe--form textarea{
+  width: 80%;
+  margin: 5px;
+}
