@@ -30,7 +30,8 @@ function handleLogin(e){
 
 return (
     <div className="auth-container">
-      <h1>Recipe Box</h1>
+      <h1 className="title">Recipe Box</h1>
+      <hr/>
       { !toggle ?
         <>
           <AuthForm 
@@ -40,7 +41,7 @@ return (
             errMsg={errMsg}
             btnText="Sign up"
           />
-          <p onClick={() => setToggle(prev => !prev)}>Already a member?</p>
+          <p onClick={() => setToggle(prev => !prev)} className="member">Already a member?</p>
         </>
       :
         <>
@@ -51,7 +52,7 @@ return (
             errMsg={errMsg}
             btnText="Login"
           />
-          <p onClick={() => setToggle(prev => !prev)}>Not a member?</p>
+          <p onClick={() => setToggle(prev => !prev)} className="member">Not a member?</p>
         </>
       }
     </div>

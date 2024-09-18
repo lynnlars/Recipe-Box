@@ -8,11 +8,14 @@
 
 
 *{
-  margin: 0;
   box-sizing: border-box;
   font-family: "Baskervville SC", serif;
   color: var(--font-color);
-  
+}
+
+body{
+background-color: #c6cabb;
+
 }
 
 button{
@@ -103,4 +106,45 @@ button{
 .recipe--form textarea{
   width: 80%;
   margin: 5px;
+}
+
+.login-form{
+  padding-left: 45%;
+  padding-right: 45%;
+  margin-top: 15%;
+
+}
+
+.username{
+  display: block;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.password{
+  display: block;
+  margin-top: 10px;
+  height: 40px;
+  border-radius: 10px;
+}
+
+.submit-bttn{
+  margin-top: 10px;
+  margin-left: 35px;
+}
+
+.title{
+  text-align: center;
+}
+
+.member{
+  text-align: center;
+  font-size: 25px;
+}
+
+hr{
+  width: 75%;
+  height: 5px;
+  background-color: #505c2e;
+  border-color: #505c2e;
 }
